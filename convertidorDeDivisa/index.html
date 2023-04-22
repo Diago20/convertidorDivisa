@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="idex.js"></script>
+  </head>
+  <body>
+      <!-- Add the progress bar element -->
+      <div class="my-slider-progress">
+        <div class="my-slider-progress-bar"></div>
+      </div>
+    </div>
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide"><div>
+            <!-- Libra Esterlina -->
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Libra Esterlina</h4>
+            </div>
+            <div class="card-body">
+              <label for="LibraCant"
+                >Cantidad
+                <input type="number" step="0.01" id="cantidad_libra" />
+              </label>
+              <br />
+              <label for="Select"
+                >Elige moneda a convertir
+                <select name="Libra" id="Libra">
+                  <option value="DOLAR">DOLAR</option>
+                  <option value="EURO">EURO</option>
+                  <option value="YEN">YEN</option>
+                  <option value="RUBLORUSO">RUBLO RUSO</option>
+                </select>
+              </label>
+              <button
+                class="converterLibra"
+                id="ConverterLibra"
+                onclick="ConverterLibra()"
+              >
+                Convertir Moneda
+              </button>
+            </div>
+            <p id="result_libra"></p>
+          </div>
+        </div>
+          </div></li>
+          <li class="splide__slide"><div>
+            <!-- Rublo Ruso -->
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Rublo Ruso</h4>
+            </div>
+            <div class="card-body">
+              <label for="RubloCant"
+                >Cantidad
+                <input type="number" step="0.01" id="cantidad_rublo" />
+              </label>
+              <br />
+              <label for="Select"
+                >Elige moneda a convertir
+                <select name="Rublo" id="Rublo">
+                  <option value="DOLAR">DOLAR</option>
+                  <option value="EURO">EURO</option>
+                  <option value="YEN">YEN</option>
+                  <option value="LIBRAESTERLINA">LIBRA ESTERLINA</option>
+                </select>
+              </label>
+              <button
+                class="converterRublo"
+                id="ConverterRublo"
+                onclick="ConverterRublo()"
+              >
+                Convertir Moneda
+              </button>
+            </div>
+            <p id="result_rublo"></p>
+          </div>
+        </div>
+          </div></li>
+          <li class="splide__slide"><div>
+            <!-- Euro -->
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Euro</h4>
+            </div>
+            <div class="card-body">
+              <label for="EuroCant"
+                >Cantidad
+                <input type="number" step="0.01" id="cantidad_euro" />
+              </label>
+              <br />
+              <label for="Select"
+                >Elige moneda a convertir
+                <select name="Euro" id="Euro">
+                  <option value="DOLAR">DOLAR</option>
+                  <option value="YEN">YEN</option>
+                  <option value="RUBLORUSO">RUBLO RUSO</option>
+                  <option value="LIBRAESTERLINA">LIBRA ESTERLINA</option>
+                </select>
+              </label>
+              <button
+                class="converterEuro"
+                id="ConverterEuro"
+                onclick="ConverterEuro()"
+              >
+                Convertir Moneda
+              </button>
+            </div>
+            <p id="result_euro"></p>
+          </div>
+        </div>
+          </div></li>
+          <li class="splide__slide"><div>
+            <!-- YEN -->
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Yen</h4>
+            </div>
+            <div class="card-body">
+              <label for="YenrCant"
+                >Cantidad
+                <input type="number" step="0.01" id="cantidad_yen" />
+              </label>
+              <br />
+              <label for="Select"
+                >Elige moneda a convertir
+                <select name="Yen" id="Yen">
+                  <option value="DOLAR">DOLAR</option>
+                  <option value="EURO">EURO</option>
+                  <option value="RUBLORUSO">RUBLO RUSO</option>
+                  <option value="LIBRAESTERLINA">LIBRA ESTERLINA</option>
+                </select>
+              </label>
+              <button
+                class="converteYenr"
+                id="ConverterYen"
+                onclick="ConverterYen()"
+              >
+                Convertir Moneda
+              </button>
+            </div>
+            <p id="result_yen"></p>
+          </div>
+        </div>
+          </div></li>
+          <li class="splide__slide"><div>
+            <!-- Dolar -->
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Dolar</h4>
+            </div>
+            <div class="card-body">
+              <label for="DollarCant"
+                >Cantidad
+                <input type="number" step="0.01" id="cantidad_dolar" />
+              </label>
+              <br />
+              <label for="Select"
+                >Elige moneda a convertir
+                <select name="Dollar" id="Dollar">
+                  <option value="EURO">EURO</option>
+                  <option value="YEN">YEN</option>
+                  <option value="RUBLORUSO">RUBLO RUSO</option>
+                  <option value="LIBRAESTERLINA">LIBRA ESTERLINA</option>
+                </select>
+              </label>
+              <button
+                class="converterDollar"
+                id="ConverterDollar"
+                onclick="ConverterDollar()"
+              >
+                Convertir Moneda
+              </button>
+            </div>
+            <p id="result_dolar"></p>
+          </div>
+        </div>
+          </div></li>
+          
+        </ul>
+      </div>
+
+      <!-- Add the progress bar element -->
+      <div class="my-slider-progress">
+        <div class="my-slider-progress-bar"></div>
+      </div>
+    </div>
+  </body>
+</html>
